@@ -95,10 +95,10 @@ main()
 	char choose;
 	int n = 0, value, m;
 	int * a, * look;
-	a = calloc ( n+1 ,sizeof(int) );
+	a = (int*) calloc ( n+1 ,sizeof(int) );
 	do {
 		a =(int*) realloc(a,n+1);
-		look = calloc ( n+1 ,sizeof(int) );
+		look =(int*) calloc ( n+1 ,sizeof(int) );
 		choose = getUserChoice();
 		switch (choose) 
 		{
